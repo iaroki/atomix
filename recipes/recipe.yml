@@ -39,6 +39,7 @@ modules:
       - zsh
       - android-tools
       - android-file-transfer
+      - "@virtualization"
       - libvirt
       - bootc
 #      - podman-bootc
@@ -70,6 +71,11 @@ modules:
         install: # system flatpaks we want all users to have and not remove
           - org.gnome.Loupe
       - scope: user # Also add Flathub user repo, but no user packages
+        install: # system flatpaks we want all users to have and not remove
+          - app.zen_browser.zen
+          - dev.zed.Zed
+          - app.devsuite.Ptyxis
+          - com.github.tchx84.Flatseal
+          - io.bassi.Amberol
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
