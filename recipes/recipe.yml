@@ -39,7 +39,6 @@ modules:
       - zsh
       - android-tools
       - android-file-transfer
-      - "@virtualization"
       - libvirt
       - bootc
 #      - podman-bootc
